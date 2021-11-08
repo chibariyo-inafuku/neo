@@ -454,11 +454,16 @@ footer .inner .info p {
   margin: 0 0 8px;
   font-size: 14px;
 }
+.copy.inner {
+    max-width: 990px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 15px;
+	font-size: 14px;
+}
 small.footer-btm {
   display: block;
-  padding: 40px 0;
-  font-size: 14px;
-  text-align: center;
+  
 }
 @media screen and (max-width: 1024px) {
   footer {
@@ -484,10 +489,7 @@ small.footer-btm {
     margin: 0 0 8px;
     font-size: 14px;
   }
-  small.footer-btm {
-    padding: 40px 0;
-    font-size: 14px;
-  }
+
 }
 
 

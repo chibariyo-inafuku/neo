@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "rogosan-b";
+  src: url("fonts/RoGSanSrfStd-Bd.woff2") format('woff2'),
+       url("fonts/RoGSanSrfStd-Bd.woff")  format('woff');
+
+}
+@font-face {
+  font-family: "rogosan-u";
+  src: 
+			 url("fonts/RoGSanSrfStd-UB.woff") format('woff2'),
+			 url("fonts/RoGSanSrfStd-UB.woff2") format('woff2');
+}
+.rogosan-b{
+  font-family: "rogosan-b";
+}
+.rogosan-u {
+  font-family: "rogosan-u";
+}
