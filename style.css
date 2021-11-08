@@ -1,0 +1,877 @@
+@charset "utf-8";
+/*
+Theme Name: 
+Author: 
+Author URI: 
+Description: 
+*/
+
+
+
+
+/*======================================
+
+  ------------------------------------
+    カラー
+  ------------------------------------
+
+    Main       : #
+    Accent     : #
+    Base       : #
+
+  ------------------------------------
+    フォント
+  ------------------------------------
+
+    * 
+    * 
+
+  ------------------------------------
+    構造
+  ------------------------------------
+
+    1. 基本
+    2. ヘッダー
+    3. メイン
+    4. サイド
+    5. フッター
+    6. コンタクトフォーム
+      6-1. 入力画面
+      6-2. 確認画面
+      6-3. 完了画面
+      6-4. エラー画面
+    7. 各ページ
+      7-1. HOME
+      7-2. 固定/投稿ページ
+      7-3. 固定ページ
+      7-4. 投稿ページ
+      7-5. カテゴリーページ
+      7-6. 検索ージ
+    8. 404ページ
+
+  ------------------------------------
+    ログ
+  ------------------------------------
+
+    2021/11/02 : 
+    2021/11/XX : 
+    2021/11/XX : 
+    2021/11/XX : 
+    2021/11/XX : 
+    2021/11/XX : 
+
+
+======================================*/
+
+
+
+
+/*======================================
+
+  1. 基本
+
+======================================*/
+
+/* 要素 */
+* {
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Arial', 'Yu Gothic', 'Meiryo', sans-serif;
+  color: #ffffff;
+}
+html {
+  /*font-size: calc(100vw / 153.6);*/
+  font-size: calc(100vw / 96.0);
+}
+h1, h2, h3, h4, h5, h6, ul, p {
+  margin: 0;
+}
+p {
+  text-align: justify;
+}
+a {
+  text-decoration: none;
+}
+img {
+  vertical-align: bottom;
+}
+.wrap {
+  background-color: #1a100e;
+}
+.fs0 {
+  font-size: 0;
+}
+
+/* 非表示/pcのみ表示/spのみ表示 */
+.dp-n {
+  display: none !important;
+}
+.spview {
+  display: none !important;
+}
+.spview-i {
+  display: none !important;
+}
+@media screen and (max-width: 1024px) {
+  .pcview {
+    display: none !important;
+  }
+  .spview {
+    display: block !important;
+  }
+  .spview-i {
+    display: inline !important;
+  }
+}
+
+/* flex */
+.flex {
+  display: flex !important;
+}
+.flex-pc {
+  display: flex !important;
+}
+@media screen and (max-width: 1024px) {
+  .flex-pc {
+    display: block !important;
+  }
+  .flex-sp {
+    display: flex !important;
+  }
+}
+.fd-r {
+  flex-direction: row;
+}
+.fd-rr {
+  flex-direction: row-reverse;
+}
+.fd-c {
+  flex-direction: column;
+}
+.fd-cr {
+  flex-direction: column-reverse;
+}
+.fw-n {
+  flex-wrap: nowrap;
+}
+.fw-w {
+  flex-wrap: wrap;
+}
+.fw-wr {
+  flex-wrap: wrap-reverse;
+}
+.jc-fs {
+  justify-content: flex-start;
+}
+.jc-fe {
+  justify-content: flex-end;
+}
+.jc-c {
+  justify-content: center;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+.jc-sa {
+  justify-content: space-around;
+}
+.ai-s {
+  align-items: stretch;
+}
+.ai-fs {
+  align-items: flex-start;
+}
+.ai-fe {
+  align-items: flex-end;
+}
+.ai-c {
+  align-items: center;
+}
+.ai-b {
+  align-items: baseline;
+}
+
+/* margin !important */
+.mt10 {
+  margin-top: 1.0rem !important;
+}
+.mt30 {
+  margin-top: 3.0rem !important;
+}
+.mt60 {
+  margin-top: 6.0rem !important;
+}
+.mt90 {
+  margin-top: 9.0rem !important;
+}
+.mb10 {
+  margin-bottom: 1.0rem !important;
+}
+.mb30 {
+  margin-bottom: 3.0rem !important;
+}
+.mb60 {
+  margin-bottom: 6.0rem !important;
+}
+.mb90 {
+  margin-bottom: 9.0rem !important;
+}
+
+
+
+
+/*======================================
+
+  2. ヘッダー
+
+======================================*/
+
+/* head-top */
+header .head-top {
+  background-color: #2e2a27;
+}
+header .head-top .inner {
+  max-width: 99.0rem;
+  width: 100%;
+  margin: 0 auto;
+  /*padding: 0 1.5rem;*/
+}
+header .head-top .inner ul {
+  padding: 2.0rem 1.2rem 1.0rem 0;
+  list-style-type: none;
+}
+header .head-top .inner ul li a {
+  padding: 0 .8rem;
+  border-right: .1rem solid #ffffff;
+  font-size: 1.276rem;
+  line-height: 1.75;
+}
+header .head-top .inner ul li:last-child a {
+  border-right: none;
+}
+
+/* head-btm */
+header .head-btm {
+  padding: 1.2rem 0;
+}
+header .head-btm .inner {
+  max-width: 99.0rem;
+  width: 100%;
+  margin: 0 auto;
+  /*padding: 0 1.5rem;*/
+}
+header .head-btm .inner .head-logo {
+  width: 16.8rem;
+  margin: 0 0 0 3.4rem;
+}
+header .head-btm .inner .head-logo a img {
+  width: 100%;
+}
+header .head-btm .inner .head-menu {
+  width: 63.8rem;
+  margin: 0 8.0rem 0 0;
+}
+header .head-btm .inner .head-menu > ul {
+  height: 4.0rem;
+  margin: 0 auto;
+  padding: 0;
+}
+header .head-btm .inner .head-menu > ul > li {
+  width: 25%;
+  z-index: 1;
+}
+header .head-btm .inner .head-menu > ul li {
+  list-style: none;
+  position: relative;
+}
+header .head-btm .inner .head-menu > ul li a {
+  display: block;
+  width: 100%;
+  height: 4.0rem;
+  background-color: rgba(26, 16, 14, .5);
+  font-size: 1.276rem;
+  line-height: 4.0rem;
+  text-align: center;
+}
+header .head-btm .inner .head-menu > ul > li > a:hover {
+  cursor: default;
+}
+header .head-btm .inner .head-menu > ul li ul {
+  padding: 0;
+}
+header .head-btm .inner .head-menu > ul li ul li {
+  height: 0;
+  overflow: hidden;
+  transition: .4s;
+}
+header .head-btm .inner .head-menu > ul li:hover > ul > li {
+  height: 4.0rem;
+  overflow: visible;
+}
+header .head-btm .inner .head-menu > ul li ul li a {
+  font-size: 1.134rem;
+  transition: .4s;
+  position: relative;
+}
+header .head-btm .inner .head-menu > ul li ul li a::after {
+  display: block;
+  content: '';
+  width: 90.282131661%;
+  margin: 0 auto;
+  border-bottom: .1rem solid #ffffff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+header .head-btm .inner .head-menu > ul li ul li:last-child a::after {
+  display: none;
+}
+header .head-btm .inner .head-menu > ul li ul li a.another {
+  background-color: rgba(255, 255, 255, .7);
+  color: #231815;
+}
+header .head-btm .inner .head-menu > ul li ul li a:hover {
+  opacity: .6;
+}
+
+@media screen and (max-width: 1024px) {
+  /* head-top */
+  header .head-top .inner ul {
+    padding: 10px 12px 10px 0;
+  }
+  header .head-top .inner ul li a {
+    padding: 0 8px;
+    border-right: 1px solid #ffffff;
+    font-size: 12.76px;
+  }
+
+  /* head-btm */
+  header .head-btm {
+    padding: 24px 0 12px;
+  }
+  header .head-btm .inner .head-logo {
+    width: 168px;
+    margin: 0 auto 12px;
+  }
+  header .head-btm .inner .head-menu {
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+  header .head-btm .inner .head-menu > ul {
+    height: auto;
+  }
+  header .head-btm .inner .head-menu > ul > li {
+    width: 100%;
+  }
+  header .head-btm .inner .head-menu > ul li a {
+    height: 40px;
+    font-size: 12.76px;
+    line-height: 40px;
+  }
+  header .head-btm .inner .head-menu > ul li ul {
+    display: none;
+  }
+  header .head-btm .inner .head-menu > ul li ul li {
+    height: auto;
+  }
+  header .head-btm .inner .head-menu > ul li:hover > ul > li {
+    height: 40px;
+  }
+  header .head-btm .inner .head-menu > ul li ul li a {
+    font-size: 11.34px;
+  }
+  header .head-btm .inner .head-menu > ul li ul li a::after {
+    border-bottom: 1px solid #ffffff;
+  }
+}
+
+
+
+
+/*======================================
+
+  3. メイン
+
+======================================*/
+
+main {
+}
+@media screen and (max-width: 1024px) {
+  main {
+  }
+}
+
+
+
+
+/*======================================
+
+  4. サイド
+
+======================================*/
+
+aside {
+}
+@media screen and (max-width: 1024px) {
+  aside {
+  }
+}
+
+
+
+
+/*======================================
+
+  5. フッター
+
+======================================*/
+
+footer {
+  padding: 19.0rem 0 6.4rem;
+  background-image: url('./img/footer-add.svg');
+  background-repeat: no-repeat;
+  background-position: top left -10.8rem;
+  background-size: contain;
+}
+footer .inner {
+  max-width: 84.8rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+footer .inner div h2 {
+  margin: 0 0 .8rem;
+  font-size: 1.543rem;
+}
+footer .inner div ul {
+  padding: 0;
+  list-style-type: none;
+}
+footer .inner div ul li a {
+  display: block;
+  padding: .3rem 0;
+  font-size: 1.056rem;
+}
+footer .inner .info p {
+  margin: 0 0 .8rem;
+  font-size: 1.056rem;
+}
+small.footer-btm {
+  display: block;
+  padding: 4.0rem 0;
+  font-size: 1.063rem;
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  footer {
+    padding: 30px 0;
+    background-image: none;
+  }
+  footer .inner {
+    max-width: none;
+    padding: 0 15px;
+  }
+  footer .inner div h2 {
+    margin: 0 0 8px;
+    font-size: 15.43px;
+  }
+  footer .inner div ul {
+    margin: 0 0 30px;
+  }
+  footer .inner div ul li a {
+    padding: 3px 0;
+    font-size: 10.56px;
+  }
+  footer .inner .info p {
+    margin: 0 0 8px;
+    font-size: 10.56px;
+  }
+  small.footer-btm {
+    padding: 40px 0;
+    font-size: 10.63px;
+  }
+}
+
+
+
+
+/*======================================
+
+  6. コンタクトフォーム
+
+======================================*/
+
+/*
+  6-1. 入力画面
+======================================*/
+
+.contact {
+}
+
+
+/*
+  6-2. 確認画面
+======================================*/
+
+.contact {
+}
+
+
+/*
+  6-3. 完了画面
+======================================*/
+
+.contact {
+}
+
+
+/*
+  6-4. エラー画面
+======================================*/
+
+.contact {
+}
+
+
+
+
+/*======================================
+
+  7. 各ページ
+
+======================================*/
+
+/*
+  7-1. HOME
+======================================*/
+
+/* main-visual */
+.home .main-visual {
+  position: relative;
+}
+.home .main-visual .mv {
+  width: 100%;
+}
+.home .main-visual .mv-add-01 {
+  width: 46.9rem;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 7.0rem;
+  right: 0;
+  left: 0;
+}
+
+/* main-footer-bg */
+.home .main-footer-bg {
+  background-image: url('./img/main-footer-bg-add.svg'), url('./img/main-footer-bg.jpg');
+  background-size: 58.2rem, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top -1.0rem right 1.0rem, bottom center;
+}
+
+/* 基本 */
+.home main {
+  padding: 3.0rem 0 11.6rem;
+}
+.home main .inner {
+  max-width: 93.0rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.home main .inner .h2-design-01 {
+  margin: 0 0 2.0rem;
+  padding: 1.2rem 0 1.6rem 13.6rem;
+  background-repeat: no-repeat;
+  background-size: 12.2rem;
+  font-size: 3.234rem;
+  font-weight: 400;
+}
+.home main .inner .h2-design-01 .h-fl {
+  color: #da8000;
+}
+.home main .inner .h2-design-01 .h-in {
+  display: block;
+  margin: 0 0 0 4.0rem;
+  font-size: 1.063rem;
+}
+.home main .inner .h2-design-02 {
+  margin: 0 0 2.0rem;
+  padding: 0 0 0 13.6rem;
+  background-repeat: no-repeat;
+  background-size: 12.2rem;
+  font-size: 3.234rem;
+  line-height: 1;
+  font-weight: 400;
+}
+.home main .inner .h2-design-02 .h-fl {
+  color: #da8000;
+}
+.home main .inner .h2-design-02 .h-in {
+  display: block;
+  margin: 1.0rem 0 0;
+  font-size: 1.134rem;
+  line-height: 1.75;
+}
+.home main .inner .h2-orange-01 {
+  background-image: url('./img/h2-orange-01.svg');
+}
+.home main .inner .h2-orange-02 {
+  background-image: url('./img/h2-orange-02.svg');
+}
+.home main .inner .h2-orange-03 {
+  background-image: url('./img/h2-orange-03.svg');
+}
+.home main .inner .h2-orange-04 {
+  background-image: url('./img/h2-orange-04.svg');
+}
+
+/* news */
+.home main .inner .news {
+  margin: 0 0 3.0rem;
+}
+.home main .inner .news table {
+  width: 84.6rem;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-top: .08rem solid #868687;
+}
+.home main .inner .news table th {
+  width: 14%;
+  padding: 1.2rem .8rem;
+  border-bottom: .08rem solid #868687;
+  font-size: 1.063rem;
+  line-height: 1.75;
+  font-weight: 400;
+  text-align: justify;
+}
+.home main .inner .news table td {
+  border-bottom: .08rem solid #868687;
+}
+.home main .inner .news table td a {
+  display: block;
+  padding: 1.2rem .8rem;
+  font-size: 1.063rem;
+  line-height: 1.75;
+  text-align: justify;
+}
+
+/* we-are-neo */
+.home main .inner .we-are-neo {
+  margin: 0 0 6.0rem;
+}
+.home main .inner .we-are-neo .carousel {
+  width: 89.8rem;
+  margin: 0 auto;
+  background-image: url('./img/carousel.svg'), url('./img/carousel.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  background-position: top left, top right;
+}
+.home main .inner .we-are-neo .carousel a img {
+  display: block;
+  width: 50.8rem;
+  margin: 0 auto;
+}
+
+/* neo-project */
+.home main .inner .neo-project {
+  margin: 0 0 6.0rem;
+}
+.home main .inner .neo-project .carousel {
+  width: 89.8rem;
+  margin: 0 auto;
+  background-image: url('./img/carousel.svg'), url('./img/carousel.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  background-position: top left, top right;
+}
+.home main .inner .neo-project .carousel a img {
+  display: block;
+  width: 50.8rem;
+  margin: 0 auto;
+}
+
+/* join-us */
+.home main .inner .join-us {
+}
+.home main .inner .join-us img {
+  width: 100%;
+}
+.home main .inner .join-us .ju0101,
+.home main .inner .join-us .ju0102 {
+  display: block;
+  width: 28.5rem;
+  margin: 0 0 3.6rem;
+}
+.home main .inner .join-us .ju0103,
+.home main .inner .join-us .ju0302 {
+  display: block;
+  width: 34.3rem;
+  margin: 0 0 3.6rem -3.6rem;
+}
+.home main .inner .join-us .ju0201,
+.home main .inner .join-us .ju0401 {
+  display: block;
+  width: 34.3rem;
+  margin: 0 0 3.6rem;
+}
+.home main .inner .join-us .ju0202,
+.home main .inner .join-us .ju0402 {
+  display: block;
+  width: 58.1rem;
+  margin: 0 0 3.6rem -3.6rem;
+}
+.home main .inner .join-us .ju0301 {
+  display: block;
+  width: 58.1rem;
+  margin: 0 0 3.6rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .home {
+  }
+}
+
+
+/*
+  7-2. 固定/投稿ページ
+======================================*/
+
+.page,
+.single {
+}
+@media screen and (max-width: 1024px) {
+  .page,
+  .single {
+  }
+}
+
+
+/*
+  7-3. 固定ページ
+======================================*/
+
+.page {
+}
+@media screen and (max-width: 1024px) {
+  .page {
+  }
+}
+
+
+/*
+  7-4. 投稿ページ
+======================================*/
+
+.single {
+}
+@media screen and (max-width: 1024px) {
+  .single {
+  }
+}
+
+
+/*
+  7-5. カテゴリーページ
+======================================*/
+
+.category {
+}
+@media screen and (max-width: 1024px) {
+  .category {
+  }
+}
+
+
+/*
+  7-6. 検索ージ
+======================================*/
+
+.search {
+}
+@media screen and (max-width: 1024px) {
+  .search {
+  }
+}
+
+
+
+
+/*======================================
+
+  8. 404ページ
+
+======================================*/
+
+.error404 {
+}
+@media screen and (max-width: 1024px) {
+  .error404 {
+  }
+}
+
+
+
+
+/*======================================
+
+  PC用レイアウト
+  1,536px以下の範囲に収めるデザインはこの中に記述
+
+======================================*/
+
+@media screen and (max-width: 1536px) {
+}
+
+
+
+
+/*======================================
+
+  PC用レイアウト
+  1,366px以下の範囲に収めるデザインはこの中に記述
+
+======================================*/
+
+@media screen and (max-width: 1366px) {
+}
+
+
+
+
+/*======================================
+
+  タブレット用レイアウト
+  1,024px以下の範囲に収めるデザインはこの中に記述
+
+======================================*/
+
+@media screen and (max-width: 1024px) {
+}
+
+
+
+
+/*======================================
+
+  スマートフォン用レイアウト
+  768px以下の範囲に収めるデザインはこの中に記述
+
+======================================*/
+
+@media screen and (max-width: 768px) {
+}
+
+
+
+
+/*======================================
+
+  スマートフォン用レイアウト
+  599px以下の範囲に収めるデザインはこの中に記述
+
+======================================*/
+
+@media screen and (max-width: 599px) {
+}
