@@ -290,6 +290,7 @@
 	font-size: 34px;
 	line-height: 1;
 	position: relative;
+	white-space: nowrap;
 }
 .breadcrumb .back-top{
 	display: inline-block;
@@ -309,6 +310,7 @@
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
+	position: relative;
 }
 /*main*/
 main.second {
@@ -317,6 +319,7 @@ main.second {
 /*MV*/
 .mv-second {
 	text-align: center;
+	position: relative;
 }
 .mv-second img {
 	width: 100%;
@@ -325,6 +328,13 @@ main.second {
 .contents-area {
 	line-height: 1.8;
 	padding: 50px 0 136px;
+	padding: 50px 0 0;
+}
+.main-content {
+	padding: 0 0 136px;
+}
+.main-content img{
+	max-width: 100%;
 }
 /*footer*/
 .second-footer {

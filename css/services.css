@@ -1,0 +1,16 @@
+.bg-services{
+
+		background-image: url("../img/services/simbol.png"),url("../img/common/neo.png"),  url("../img/company/bg-services.png");
+	background-size: 30%,130%, cover;
+	background-repeat: no-repeat,no-repeat, no-repeat;
+	background-position: top 100px right 10%,center center,  top center;
+	background-attachment: fixed,inherit,inherit;
+}
+.mv-second .development-img{
+	position: absolute;
+	top: -10%;
+	right: 5%;
+	width: 40%;
+}
+
+
