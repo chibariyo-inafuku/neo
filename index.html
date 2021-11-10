@@ -2,25 +2,86 @@
 <html>
   <head>
     <meta charset="utf-8">
-		<meta name="viewport" content="width=960" />
+    <meta name="viewport" content="width=960" />
     <link rel="icon" type="image/png" href="" sizes="256x256" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/9a30c06415.js" crossorigin="anonymous"></script>
-		<script src="js/common.js"></script>
+    <script src="js/common.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="css/import.css">
+    <link rel="stylesheet" href="css/import.css">
     <title>サイトタイトル</title>
     <meta name="description" content="サイトの概要です。" />
   </head>
   <body class="home">
     <div class="wrap">
-			<div id="header"></div>
+
+      <header>
+        <div class="head-top">
+          <div class="inner">
+            <ul class="flex jc-fe">
+              <li><a href="/history/information/index.html#access">アクセス</a></li>
+              <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="head-btm">
+          <div class="inner flex-pc jc-sb ai-c">
+            <div class="head-logo">
+              <a href="/"><img src="img/logo.svg" alt=""></a>
+            </div>
+            <div class="head-menu">
+              <ul class="flex">
+                <li>
+                  <a class="acc-outer">WE ARE NEO <i class="fas fa-angle-down spview-i"></i><i class="fas fa-angle-up spview-i fs0"></i></a>
+                  <ul class="acc-inner">
+                    <li><a href="/company/mission/">MISSION</a></li>
+                    <li><a href="/company/feature/">強み</a></li>
+                    <!--li><a href="">組織</a></li-->
+                  </ul>
+                </li>
+                <li>
+                  <a class="acc-outer">NEO PROJECT <i class="fas fa-angle-down spview-i"></i><i class="fas fa-angle-up spview-i fs0"></i></a>
+                  <ul class="acc-inner">
+                    <!--li><a href="">再生可能エネルギー事業</a></li-->
+                    <li><a class="another" href="/services/renewable_energy/development/">発電所開発</a></li>
+                    <li><a class="another" href="/services/renewable_energy/maintenance/">発電所メンテナンス</a></li>
+                    <li><a class="another" href="/services/renewable_energy/management/">発電所管理</a></li>
+                    <li><a class="another" href="/services/renewable_energy/ppa/">PPA</a></li>
+                    <li><a href="/services/construction/">ビル建設事業</a></li>
+                    <li><a href="/services/network/">通信設備工事事業</a></li>
+                    <li><a href="/services/plant/">プラント事業</a></li>
+                    <li><a href="/services/housing/">ハウジング事業</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="acc-outer">JOIN US <i class="fas fa-angle-down spview-i"></i><i class="fas fa-angle-up spview-i fs0"></i></a>
+                  <ul class="acc-inner">
+                    <!--li><a href="">TEAM NEO</a></li-->
+                    <li><a href="/join_us/team_neo/specialist_voice/">有資格者紹介</a></li>
+                    <!--li><a href="">リクルーティング</a></li-->
+                  </ul>
+                </li>
+                <li>
+                  <a class="acc-outer">NEO HISTORY <i class="fas fa-angle-down spview-i"></i><i class="fas fa-angle-up spview-i fs0"></i></a>
+                  <ul class="acc-inner">
+                    <li><a href="/history/story/">ヒストリー・沿革</a></li>
+                    <li><a href="/history/information/">企業情報</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
       <div class="main-visual">
-        <img class="mv" src="img/mv.jpg" alt="">
-        <img class="mv-add-01" src="img/mv-add-01.svg" alt="">
+        <img class="mv" src="img/home/mv.png" alt="">
+        <img class="mv" src="img/home/mv.png" alt="">
+        <img class="mv" src="img/home/mv.png" alt="">
+        <img class="mv" src="img/home/mv.png" alt="">
       </div>
       <div class="main-footer-bg">
         <main>
@@ -35,76 +96,147 @@
               <table>
                 <tr>
                   <th><time datetime="2018-05-14">2018.05.14</time></th>
-                  <td><a href="#"><span class="pcview">＞ </span>「福岡本店」事務所移転しました。</a></td>
-                </tr>
-                <tr>
-                  <th><time datetime="2018-05-14">2018.05.14</time></th>
-                  <td><a href="#"><span class="pcview">＞ </span>HPリニューアルいたしました。</a></td>
-                </tr>
-                <tr>
-                  <th><time datetime="2018-05-14">2018.05.14</time></th>
-                  <td><a href="#"><span class="pcview">＞ </span>「福岡本店」事務所移転しました。</a></td>
-                </tr>
-                <tr>
-                  <th><time datetime="2018-05-14">2018.05.14</time></th>
                   <td><a href="#"><span class="pcview">＞ </span>HPリニューアルいたしました。</a></td>
                 </tr>
               </table>
+              <div class="character-01">
+                <img src="img/home/character-01.png" alt="">
+              </div>
             </div>
             <div class="we-are-neo">
               <h2 class="h2-design-02 h2-orange-02 rogosan-b">
                 <span class="h-fl rogosan-b">W</span>E ARE NEO
                 <span class="h-in">
-                  新しい時代に挑戦していくことで、関わる全ての人に「ありがとう」と<br class="pcview">
+                  新しい時代に挑戦していくことで、関わる全ての人に「ありがとう」と<br>
                   言ってもらえる企業を目指しています。新しい時代に挑戦していくことで。
                 </span>
               </h2>
-              <div class="carousel">
-                <a href="#a"><img src="img/we-are-neo-01.png" alt=""></a>
-                <a href="#b"><img src="img/we-are-neo-02.png" alt=""></a>
-                <a href="#c"><img src="img/we-are-neo-03.png" alt=""></a>
+              <div class="img-blk-01 flex">
+                <a href="#"><img src="img/home/we-are-neo-01.png" alt=""></a>
+                <a href="#"><img src="img/home/we-are-neo-02.png" alt=""></a>
+                <a href="#"><img src="img/home/we-are-neo-03.png" alt=""></a>
               </div>
             </div>
             <div class="neo-project">
               <h2 class="h2-design-02 h2-orange-03 rogosan-b">
                 <span class="h-fl rogosan-b">N</span>EO PROJECT
                 <span class="h-in">
-                  新しい時代に挑戦していくことで、関わる全ての人に「ありがとう」と<br class="pcview">
+                  新しい時代に挑戦していくことで、関わる全ての人に「ありがとう」と<br>
                   言ってもらえる企業を目指しています。新しい時代に挑戦していくことで。
                 </span>
               </h2>
-              <div class="carousel">
-                <a href="#a"><img src="img/we-are-neo-01.png" alt=""></a>
-                <a href="#b"><img src="img/we-are-neo-02.png" alt=""></a>
-                <a href="#c"><img src="img/we-are-neo-03.png" alt=""></a>
+              <div class="img-blk-02 flex">
+                <a href="#"><img src="img/home/neo-project-01.png" alt=""></a>
+                <div>
+                  <a href="#"><img src="img/home/neo-project-02-01.png" alt=""></a>
+                  <a href="#"><img src="img/home/neo-project-02-02.png" alt=""></a>
+                </div>
+                <div>
+                  <a href="#"><img src="img/home/neo-project-03-01.png" alt=""></a>
+                  <a href="#"><img src="img/home/neo-project-03-02.png" alt=""></a>
+                </div>
+              </div>
+              <div class="img-blk-01 flex">
+                <a href="#"><img src="img/home/neo-project-04.png" alt=""></a>
+                <a href="#"><img src="img/home/neo-project-05.png" alt=""></a>
+                <a href="#"><img src="img/home/neo-project-06.png" alt=""></a>
+              </div>
+              <div class="img-blk-01 flex">
+                <a href="#"><img src="img/home/neo-project-07.png" alt=""></a>
+                <img class="neo-project-07-add" src="img/home/neo-project-07-add.svg" alt="">
+              </div>
+              <div class="character-02">
+                <img src="img/home/character-02.png" alt="">
               </div>
             </div>
             <div class="join-us">
-              <h2 class="h2-design-02 h2-orange-04">
-                <span class="h-fl">J</span>OIN US
+              <h2 class="h2-design-02 h2-orange-04 rogosan-b">
+                <span class="h-fl rogosan-b">J</span>OIN US
                 <span class="h-in">
-                  新しい時代に挑戦していくことで、関わる全ての人に「ありがとう」と<br class="pcview">
+                  新しい時代に挑戦していくことで、関わる全ての人に「ありがとう」と<br>
                   言ってもらえる企業を目指しています。新しい時代に挑戦していくことで。
                 </span>
               </h2>
-              <div class="flex fw-w jc-sb mt90">
-                <a class="ju0101" href="#"><img src="img/join-us-01-01.png" alt=""></a>
-                <a class="ju0102" href="#"><img src="img/join-us-01-02.png" alt=""></a>
-                <a class="ju0103" href="#"><img src="img/join-us-01-03.png" alt=""></a>
-                <a class="ju0201" href="#"><img src="img/join-us-02-01.png" alt=""></a>
-                <a class="ju0202" href="#"><img src="img/join-us-02-02.png" alt=""></a>
-                <a class="ju0301" href="#"><img src="img/join-us-03-01.png" alt=""></a>
-                <a class="ju0302" href="#"><img src="img/join-us-03-02.png" alt=""></a>
-                <a class="ju0401" href="#"><img src="img/join-us-04-01.png" alt=""></a>
-                <a class="ju0402" href="#"><img src="img/join-us-04-02.png" alt=""></a>
+              <div class="flex fw-w jc-sb">
+                <a class="ju0101" href="#"><img src="img/home/join-us-01-01.png" alt=""></a>
+                <a class="ju0102" href="#"><img src="img/home/join-us-01-02.png" alt=""></a>
+                <a class="ju0103" href="#"><img src="img/home/join-us-01-03.png" alt=""></a>
+                <a class="ju0201" href="#"><img src="img/home/join-us-02-01.png" alt=""></a>
+                <a class="ju0202" href="#"><img src="img/home/join-us-02-02.png" alt=""></a>
+                <a class="ju0301" href="#"><img src="img/home/join-us-03-01.png" alt=""></a>
+                <a class="ju0302" href="#"><img src="img/home/join-us-03-02.png" alt=""></a>
+                <a class="ju0401" href="#"><img src="img/home/join-us-04-01.png" alt=""></a>
+                <a class="ju0402" href="#"><img src="img/home/join-us-04-02.png" alt=""></a>
+              </div>
+              <div class="character-03">
+                <img src="img/home/character-03.png" alt="">
               </div>
             </div>
           </div>
         </main>
-        <div id="footer"></div>
+
+        <footer>
+          <div class="inner flex jc-sb">
+            <div>
+              <h2>WE ARE NEO</h2>
+              <ul>
+                <li><a href="/company/mission/">MISSION</a></li>
+                <li><a href="/company/feature/">強み</a></li>
+                <!--li><a href="#">組織</a></li-->
+              </ul>
+            </div>
+            <div>
+              <h2>NEO PROJECT</h2>
+              <ul>
+                <!--li><a href="#">再生可能エネルギー事業</a></li-->
+                <li><a href="/services/renewable_energy/development/">・発電所開発</a></li>
+                <li><a href="/services/renewable_energy/maintenance/">・発電所メンテナンス</a></li>
+                <li><a href="/services/renewable_energy/management/">・発電所管理</a></li>
+                <li><a href="/services/renewable_energy/ppa/">・PPA</a></li>
+                <li><a href="/services/construction/">ビル建設事業</a></li>
+                <li><a href="/services/network/">通信設備工事事業</a></li>
+                <li><a href="/services/plant/">プラント事業</a></li>
+                <li><a href="/services/housing/">ハウジング事業</a></li>
+              </ul>
+            </div>
+            <div>
+              <h2>JOIN US</h2>
+              <ul>
+                <!--li><a href="#">TEAM NEO</a></li-->
+                <li><a href="/join_us/team_neo/specialist_voice/">有資格者紹介</a></li>
+                <!--li><a href="#">リクルーティング</a></li-->
+              </ul>
+            </div>
+            <div>
+              <h2>NEO HISTORY</h2>
+              <ul>
+                <li><a href="/history/story/">ヒストリー・沿革</a></li>
+                <li><a href="/history/information/">企業情報</a></li>
+              </ul>
+            </div>
+            <div class="info">
+              <p>株式会社ＮＥＯ</p>
+              <p>〒822-0001</p>
+              <p>福岡県直方市大字感田2433番地1</p>
+              <p>TEL 0949-26-3191</p>
+              <p>＞＞＞<a href="/history/information/index.html#access">アクセス</a></p>
+            </div>
+          </div>
+        </footer>
+
       </div>
-			<div id="copy"></div>
-			
+
+      <div class="copy inner">
+        <div class="flex jc-sb">
+          <a href="">お問い合わせ</a>
+          <a href="">お知らせ</a>
+          <a href="">サイトマップ</a>
+          <a href="">個人情報保護方針</a>
+          <!--a href="">利用規約</a-->
+          <small class="footer-btm">Copyright &copy; 2018 NEO co.,ltd. All Rights Reserved.</small>
+        </div>
+      </div>
+
     </div>
     <script src="js/slick.min.js"></script>
     <script>
@@ -125,37 +257,14 @@
       // カルーセル
       // we-are-neo
       $(function() {
-        var slide = $('.we-are-neo .carousel');
+        var slide = $('.main-visual');
         slide.slick({
           infinite: true,
           autoplay: false,
           dots: false,
           arrows: false,
           slidesToShow: 1,
-          centerMode: true,
-          // centerPadding: '40.0rem',
-          responsive: [
-            {
-              breakpoint: 1025,
-              settings: {
-                arrows: false,
-                slidesToShow: 1,
-                centerPadding: '0',
-              }
-            }
-          ]
-        });
-      });
-      // neo-project
-      $(function() {
-        var slide = $('.neo-project .carousel');
-        slide.slick({
-          infinite: true,
-          autoplay: false,
-          dots: false,
-          arrows: false,
-          slidesToShow: 1,
-          centerMode: true,
+          centerMode: false,
           // centerPadding: '40.0rem',
           responsive: [
             {
