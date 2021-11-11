@@ -333,6 +333,10 @@ header .head-btm .inner .head-menu > ul li ul li a.another {
 	padding: 0 15px;
 	position: relative;
 }
+/*パンくず*/
+.br2{
+	padding-top: 0 !important;
+}
 /*main*/
 main.second {
 	padding: 30px 0 0;
