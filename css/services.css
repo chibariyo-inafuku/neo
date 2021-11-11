@@ -13,6 +13,33 @@
 	background-position: top 100px right 10%,center center,  top center;
 	background-attachment: fixed,inherit,inherit;
 }
+.bg-services-network{
+		background-image: url("../img/services/simbol-network.png"),url("../img/common/neo.png"),  url("../img/company/bg-services.png");
+	background-size: 30%,130%, cover;
+	background-repeat: no-repeat,no-repeat, no-repeat;
+	background-position: top 100px right 10%,center center,  top center;
+	background-attachment: fixed,inherit,inherit;
+}
+.bg-services-plant{
+		background-image: url("../img/services/simbol-plant.png"),url("../img/common/neo.png"),  url("../img/company/bg-services.png");
+	background-size: 30%,130%, cover;
+	background-repeat: no-repeat,no-repeat, no-repeat;
+	background-position: top 100px right 10%,center center,  top center;
+	background-attachment: fixed,inherit,inherit;
+}
+.bg-services-housing{
+		background-image: url("../img/services/simbol-housing.png"),url("../img/common/neo.png"),  url("../img/company/bg-services.png");
+	background-size: 40%,130%, cover;
+	background-repeat: no-repeat,no-repeat, no-repeat;
+	background-position: top 100px right 10%,center 40%,  top center;
+	background-attachment: fixed,inherit,inherit;
+}
+.bg-sitemap{
+		background-image: url("../img/common/bg-pankuzu.png"),url("../img/common/neo.png"),  url("../img/common/bg-second.png");
+	background-size: 50%,130%, cover;
+	background-repeat: no-repeat,no-repeat, no-repeat;
+	background-position: right 10% top,center 40%,  center top;
+}
 .mv-second .development-img{
 	position: absolute;
 	top: -10%;
@@ -20,4 +47,118 @@
 	width: 40%;
 }
 
+/*プラント事業*/
+.plant-box{
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	padding: 50px 0;
+	margin: 50px 0 100px;
+}
+.plant-box p{
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+}
+/*ハウジング事業*/
+.neohous-box{
+	margin: 100px 0 100px;
+	text-align: center;
+}
+/*
+.main-content a:hover,footer a:hover{
+	opacity: 0.5;
+}*/
 
+/*NEWS*/
+.bg-news{
+	background-image: url("../img/news/news-bg-top.png"),  url("../img/news/news-bg-bottom.png"),url("../img/news/news-bg-middle.png");
+	background-size: 100%,100%, 100%;
+	background-repeat: no-repeat, no-repeat,repeat-y ;
+	background-position: center top,center bottom, center bottom;
+	padding: 30px;
+	max-width: 750px;
+	margin: 0 auto 50px;
+}
+.news-inner{
+	background-image: url("../img/news/news-logo.png"),  url("../img/news/news-logo.png");
+	background-size: 13%,13%;
+	background-repeat: no-repeat, no-repeat;
+	background-position: left 10px top 100px,right 10px bottom;
+	min-height: 1000px;
+	padding-left: 0;
+	
+}
+.news-inner li{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #000000;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	padding: 0 20px 30px;
+	overflow: hidden;
+}
+.news-inner li:nth-child(even){
+	flex-direction: row-reverse;
+}
+.news-left{
+	background: url(../img/news/news-date.png) left top no-repeat;
+	background-size: 94%;
+	width: 50%;
+	padding-right: 20px;
+	
+}
+.news-inner li:nth-child(even) .news-left {
+	padding-left: 20px;
+	padding-right: 0;
+}
+.news-left span{
+	writing-mode: vertical-rl;
+	color: #DA8000;
+	font-size: 16px;
+}
+.news-inner li:nth-child(even) span{
+	float: right;
+	margin-top: 80px;
+}
+.news-right {
+	width: 50%;
+}
+
+.news-right h3{
+	font-size: 18px;
+	color: #DA8000;
+	font-weight: normal;
+}
+.news-right p{
+	font-size: 14px;
+	color: #231815;
+	font-weight: bold;
+	margin-bottom: 14px;
+}
+.news-right figure{
+	padding: 0;
+	margin: 0;
+}
+.news-right img{
+	max-width: 100%;
+	height: auto;
+}
+
+/*サイトマップ*/
+.sitemap-area{
+	max-width: 700px;
+	margin: 100px auto 50px;
+}
+.sitemap-line{
+	border-bottom: 1px solid #fff;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.sitemap-area div h2 {
+    font-size: 18px;
+}
+.sitemap-area div ul {
+    padding: 0;
+    list-style-type: none;
+	font-size: 14px
+}

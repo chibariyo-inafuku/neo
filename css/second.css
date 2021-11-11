@@ -280,6 +280,18 @@
 .lh30 {
 	line-height: 3 !important;
 }
+/*footer*/
+.foot-logo{
+	margin-bottom: 15px;
+}
+.foot-logo img{
+	max-width: 135px;
+}
+/*gnavi*/
+.gyou2{
+	line-height: 1.5 !important;
+	padding-top: 10px;
+}
 /*breadcrumb*/
 .breadcrumb {
 	background-image: url(../img/h2-orange-04.svg);
