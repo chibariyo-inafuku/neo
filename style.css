@@ -558,7 +558,7 @@ footer .inner .info p {
 
 /* 基本 */
 .home main {
-  padding: 30px 0 200px;
+  padding: 30px 0 340px;
 }
 .home main .inner {
   max-width: 930px;
@@ -663,9 +663,9 @@ footer .inner .info p {
   text-align: justify;
 }
 .home main .inner .news .character-01 {
-  width: 387px;
+  width: 376px;
   position: absolute;
-  top: -80px;
+  top: -20px;
   right: -40px;
 }
 .home main .inner .news .character-01 img {
@@ -694,7 +694,8 @@ footer .inner .info p {
   content: '';
   width: 82px;
   height: 100%;
-  background-image: url('./img/we-are-neo-add.svg');
+  background-repeat: no-repeat;
+  background-image: url('./img/we-are-neo-add-01.svg');
   position: absolute;
   top: 0;
   left: -41px;
@@ -726,7 +727,8 @@ footer .inner .info p {
   content: '';
   width: 82px;
   height: 100%;
-  background-image: url('./img/neo-project-add.svg');
+  background-repeat: no-repeat;
+  background-image: url('./img/neo-project-add-01.svg');
   position: absolute;
   top: 0;
   left: -41px;
@@ -751,12 +753,13 @@ footer .inner .info p {
 .home main .inner .neo-project .img-blk-02 a::before {
   display: block;
   content: '';
-  width: 82px;
+  width: 52px;
   height: 100%;
-  background-image: url('./img/neo-project-add.svg');
+  background-image: url('./img/neo-project-add-02.svg');
+  background-repeat: no-repeat;
   position: absolute;
   top: 0;
-  left: -41px;
+  left: -10px;
 }
 .home main .inner .neo-project .img-blk-02 > a::before {
   background-image: none;
@@ -774,9 +777,9 @@ footer .inner .info p {
   width: 270px;
 }
 .home main .inner .neo-project .character-02 {
-  width: 462px;
+  width: 405px;
   position: absolute;
-  bottom: -320px;
+  bottom: -280px;
   right: -120px;
 }
 .home main .inner .neo-project .character-02 img {
@@ -822,9 +825,9 @@ footer .inner .info p {
   margin: 0 0 36px;
 }
 .home main .inner .join-us .character-03 {
-  width: 439px;
+  width: 393px;
   position: absolute;
-  bottom: -420px;
+  bottom: -524px;
   left: 60px;
 }
 .home main .inner .join-us .character-03 img {
@@ -1047,4 +1050,88 @@ footer .inner .info p {
 }
 .specialist_voice .contents-area .inner-second .band-join_us a:hover img.no-active {
   display: block;
+}
+
+
+/*
+  9-1. individual
+======================================*/
+
+.specialist_voice.individual .contents-area .inner-second h2 {
+  font-size: 20px;
+  margin: 0 0 1em;
+}
+.specialist_voice.individual .contents-area .inner-second .txt-blk {
+  width: 374px;
+}
+.specialist_voice.individual .contents-area .inner-second .txt-blk h3 {
+  font-size: 20px;
+  margin: 0 0 1em;
+}
+.specialist_voice.individual .contents-area .inner-second .txt-blk p {
+  margin: 0 0 1em;
+  font-size: 11.34px;
+}
+.specialist_voice.individual .contents-area .inner-second .txt-blk p:last-child {
+  margin: 0 0 0;
+}
+.specialist_voice.individual .contents-area .inner-second .img-blk {
+  width: 396px;
+}
+.specialist_voice.individual .contents-area .inner-second .img-blk img {
+  width: 100%;
+}
+.specialist_voice.individual .contents-area .inner-second .mark-blk {
+  width: 262px;
+}
+.specialist_voice.individual .contents-area .inner-second .mark-blk img {
+  width: 100%;
+}
+.specialist_voice.individual .contents-area .inner-second .profile-blk {
+  width: 396px;
+  margin: 0 0 0 86px;
+}
+.specialist_voice.individual .contents-area .inner-second .profile-blk ul {
+  padding: 12px 0 12px 14px;
+  border-left: 2px solid #ffffff;
+  list-style-type: none;
+  position: relative;
+}
+.specialist_voice.individual .contents-area .inner-second .profile-blk ul::before {
+  display: block;
+  content: '';
+  width: 142px;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.specialist_voice.individual .contents-area .inner-second .profile-blk ul::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.specialist_voice.individual .contents-area .inner-second .profile-blk ul li {
+  font-size: 11.34px;
+}
+.specialist_voice.individual .contents-area .inner-second .end-blk {
+  width: 752px;
+  margin: 0 auto;
+  padding: 12px 14px;
+  border: 2px solid #ffffff;
+}
+.specialist_voice.individual .contents-area .inner-second .end-blk h3 {
+  padding: 0 10px 6px;
+  border-bottom: 1px solid #ffffff;
+  font-size: 23px;
+}
+.specialist_voice.individual .contents-area .inner-second .end-blk p {
+  padding: 10px 10px 0;
+  font-size: 11.34px;
 }
