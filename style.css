@@ -548,10 +548,10 @@ footer .inner .info p {
 
 /* main-footer-bg */
 .home .main-footer-bg {
-  background-image: url('./img/main-footer-bg-add.svg'), url('./img/main-footer-bg.jpg');
-  background-size: 582px, cover;
-  background-repeat: no-repeat, no-repeat;
-  background-position: top right 10px, top center;
+  background-image: url('./img/neo-bg.svg'), url('./img/neo-bg.svg'), url('./img/main-footer-bg-add.svg'), url('./img/main-footer-bg.jpg');
+  background-size: 1274px, 1274px, 582px, cover;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top 1710px center, top 550px center, top right 10px, top center;
 }
 @media screen and (max-width: 1024px) {
 }
@@ -705,6 +705,13 @@ footer .inner .info p {
 }
 .home main .inner .we-are-neo .img-blk-01 a img {
   width: 100%;
+  transition: .4s;
+}
+.home main .inner .we-are-neo .img-blk-01 a:hover img {
+  opacity: .6;
+}
+.home main .inner .we-are-neo .img-blk-01 .no-hover:hover img {
+  opacity: 1;
 }
 @media screen and (max-width: 1024px) {
 }
@@ -738,6 +745,10 @@ footer .inner .info p {
 }
 .home main .inner .neo-project .img-blk-01 a img {
   width: 100%;
+  transition: .4s;
+}
+.home main .inner .neo-project .img-blk-01 a:hover img {
+  opacity: .6;
 }
 .home main .inner .neo-project .img-blk-01 .neo-project-07-add {
   margin: 0 0 0 -41px;
@@ -775,6 +786,10 @@ footer .inner .info p {
 }
 .home main .inner .neo-project .img-blk-02 > div a img {
   width: 270px;
+  transition: .4s;
+}
+.home main .inner .neo-project .img-blk-02 > div a:hover img {
+  opacity: .6;
 }
 .home main .inner .neo-project .character-02 {
   width: 405px;
@@ -823,6 +838,15 @@ footer .inner .info p {
   display: block;
   width: 581px;
   margin: 0 0 36px;
+}
+.home main .inner .join-us a img {
+  transition: .4s;
+}
+.home main .inner .join-us a:hover img {
+  opacity: .6;
+}
+.home main .inner .join-us .no-hover:hover img {
+  opacity: 1;
 }
 .home main .inner .join-us .character-03 {
   width: 393px;
