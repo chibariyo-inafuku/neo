@@ -41,7 +41,7 @@
 	background-position: right 10% top,center 40%,  center top;
 }
 .bg-history{
-	background-image: url("../img/common/bg-pankuzua.png"),url("../img/history/bg-neo.png"),url("../img/history/bg-neo.png"),  url("../img/history/bg-history.png");
+	background-image: url("../img/history/bg-neo.png"),url("../img/history/bg-neo02.png"),url("../img/history/bg-neo.png"),  url("../img/history/bg-history.png");
 	background-size: 50%,130%,130%, cover;
 	background-repeat: no-repeat,no-repeat, no-repeat, no-repeat;
 	background-position: right 10% top,center 35%,center 70%,  center top;
@@ -212,4 +212,178 @@
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
+}
+
+/*個人情報保護方針*/
+.privacy-area h3{
+	font-size: 20px;
+}
+.privacy-area p,.privacy-area ol{
+	font-size: 16px;
+}
+.privacy-area h4{
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+/*404*/
+.not-found-box{
+	background: url("../img/notfound/bg-line.png") center bottom no-repeat #fff;
+	background-size: contain;
+	text-align: center;
+	padding: 40px 40px 80px;
+}
+.not-found-box h2{
+	font-size: 40px;
+	margin-bottom: 20px;
+	font-weight: normal;
+	color: #231815;
+}
+.not-found-box p{
+	font-size: 18px;
+	margin-bottom: 20px;
+	color: #231815;
+	text-align: center;
+}
+.not-found-box a{
+	display: inline-block;
+	background: #DA8000;
+	color: #fff;
+	font-size: 32px;
+	padding: 5px 40px;
+	font-weight: normal;
+	transition: .4s;
+}
+.not-found-box a:hover{
+	opacity: 0.6;
+	transition: .4s;
+}
+
+
+/*history*/
+.story-area{
+	position: relative;
+}
+.history-lead{
+	text-align: center;
+	margin-top: 50px;
+}
+.history-lead img{
+	max-width: 900px;
+}
+.history-end img{
+	max-width: 600px;
+}
+.story-box{
+	margin-top: 50px;
+	background: url("../img/history/line.png") center top no-repeat;
+	min-height: 500px;
+	background-size: 55px;
+	height: 2550px;
+	overflow: hidden;
+	position: relative;
+}
+.story-inner {
+	width: 44%; 
+	clear: both;
+	position: relative;
+}
+.story-inner.right {
+	float: right;
+}
+.story-inner .nen{
+	font-family: "rogosan-b";
+	color: #FFD300;
+	font-size: 40px;
+	margin-bottom: 10px;
+	line-height: 1.2;
+}
+.story-inner .midashi{
+	font-family: "rogosan-b";
+	color: #FFD300;
+	font-size: 22px;
+	margin-bottom: 10px;
+	line-height: 1.3
+}
+
+.c2004 .nen,.c2004 .midashi{
+	color: #FFD300;
+}
+.c2008{
+	top:-150px;
+}
+.c2008 .nen,.c2008 .midashi{
+	color: #ECBF00;
+}
+.c2009{
+	top:-200px;
+}
+.c2009 .nen,.c2009 .midashi{
+	color: #E9AD00;
+}
+.c2010{
+	top:-480px;
+}
+.c2010 .nen,.c2010 .midashi{
+	color: #E59A00;
+}
+.c2011{
+	top:-840px;
+}
+.c2011 .nen,.c2011 .midashi{
+	color: #E9AD00;
+}
+.c2012{
+	top:-890px;
+}
+.c2012 .nen,.c2012 .midashi{
+	color: #DD902F;
+}
+.c2014{
+	top:-1150px;
+}
+.c2014 .nen,.c2014 .midashi{
+	color: #DD902F;
+}
+.c2015{
+	top:-1540px;
+}
+.c2015 .nen,.c2015 .midashi{
+	color: #E28700;
+}
+.c2017{
+	top:-1670px;
+}
+.c2017 .nen,.c2017 .midashi{
+	color: #E28700;
+}
+.c2021{
+	top:-1780px;
+}
+.c2021 .nen,.c2021 .midashi{
+	color: #E28700;
+}
+.story-inner .s-txt{
+	font-size: 14px;
+}
+.h2000{
+	position: absolute;
+	top: 2%;
+	left: -9%;
+	width: 90%;
+}
+.h2010{
+	position: absolute;
+	top: 25%;
+	right: -9%;
+	width: 90%;
+}
+.h2020{
+	position: absolute;
+	top: 85%;
+	left: -9%;
+	width: 90%;
+}
+.clear{
+	clear: both;
 }
