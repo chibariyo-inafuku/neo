@@ -1040,7 +1040,10 @@ footer .inner .info p {
   background-color: #000000;
 }
 .specialist_voice .second-footer {
-  background-image: none, url(img/main-footer-bg.jpg);
+  background-image: none, none;
+}
+.specialist_voice .second-footer footer {
+  background-image: none;
 }
 .specialist_voice .mv-second {
   position: relative;
@@ -1158,7 +1161,7 @@ footer .inner .info p {
   background-image: url(img/join_us/join_us-bg.png);
   background-size: cover;
   background-position: top center;
-  padding: 68px 0 186px;
+  padding: 68px 0 0px;
 }
 .specialist_voice .contents-area .inner-second {
   max-width: 930px;
