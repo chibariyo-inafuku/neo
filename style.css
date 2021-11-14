@@ -1057,13 +1057,23 @@ footer .inner .info p {
   right: 0;
   left: 0;
 }
-.specialist_voice .mv-second .hover-blk-wrap > a {
-  height: 100%;
-  display: block;
+.specialist_voice .mv-second .hover-blk-wrap div {
   width: 100%;
   position: relative;
 }
-.specialist_voice .mv-second .hover-blk-wrap > a p {
+.specialist_voice .mv-second .hover-blk-wrap div > a {
+  /*background-color: red;
+  border-right: 1px solid #000;
+  opacity: .4;*/
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.specialist_voice .mv-second .hover-blk-wrap div > a + p {
   color: #ffffff;
   font-size: 2.5rem;
   line-height: 1.5;
@@ -1072,89 +1082,89 @@ footer .inner .info p {
   opacity: 0;
   transition: .4s;
 }
-.specialist_voice .mv-second .hover-blk-wrap > a p span {
+.specialist_voice .mv-second .hover-blk-wrap div > a + p span {
   font-size: 3.5rem;
 }
-.specialist_voice .mv-second .hover-blk-wrap > .no-01 p {
+.specialist_voice .mv-second .hover-blk-wrap div > .no-01 + p {
   bottom: 9.0rem;
   /*bottom: -8.0rem;*/
   right: -24.0rem;
 }
-.specialist_voice .mv-second .hover-blk-wrap > .no-02 p {
+.specialist_voice .mv-second .hover-blk-wrap div > .no-02 + p {
   bottom: 9.0rem;
   /*bottom: -8.0rem;*/
   right: -25.0rem;
 }
-.specialist_voice .mv-second .hover-blk-wrap > .no-03 p {
+.specialist_voice .mv-second .hover-blk-wrap div > .no-03 + p {
   bottom: 9.0rem;
   /*bottom: -8.0rem;*/
   right: -14.0rem;
 }
-.specialist_voice .mv-second .hover-blk-wrap > .no-04 p {
+.specialist_voice .mv-second .hover-blk-wrap div > .no-04 + p {
   bottom: 6.0rem;
   /*bottom: -11.2rem;*/
   right: -22.4rem;
 }
-.specialist_voice .mv-second .hover-blk-wrap > .no-05 p {
+.specialist_voice .mv-second .hover-blk-wrap div > .no-05 + p {
   bottom: 9.0rem;
   /*bottom: -8.0rem;*/
   right: -24.0rem;
 }
-.specialist_voice .mv-second .hover-blk-wrap > .no-06 p {
+.specialist_voice .mv-second .hover-blk-wrap div > .no-06 + p {
   bottom: 9.0rem;
   /*bottom: -8.0rem;*/
   left: -19.0rem;
   text-align: right;
 }
-.specialist_voice .mv-second .hover-blk-wrap > .no-07 p {
+.specialist_voice .mv-second .hover-blk-wrap div > .no-07 + p {
   bottom: 6.0rem;
   /*bottom: -11.2rem;*/
   left: -18.2rem;
   text-align: right;
 }
-.specialist_voice .mv-second .hover-blk-wrap > a img {
+.specialist_voice .mv-second .hover-blk-wrap div > a + p + img {
   width: 11.0rem;
   position: absolute;
   opacity: 0;
   transition: .4s;
 }
-.specialist_voice .mv-second .hover-blk-wrap > .no-01 img {
+.specialist_voice .mv-second .hover-blk-wrap div > .no-01 + p + img {
   bottom: 6.4rem;
   /*bottom: -11.0rem;*/
   right: -2.6rem;
 }
-.specialist_voice .mv-second .hover-blk-wrap > .no-02 img {
+.specialist_voice .mv-second .hover-blk-wrap div > .no-02 + p + img {
   bottom: 6.4rem;
   /*bottom: -11.0rem;*/
   right: 1.8rem;
 }
-.specialist_voice .mv-second .hover-blk-wrap > .no-03 img {
+.specialist_voice .mv-second .hover-blk-wrap div > .no-03 + p + img {
   bottom: 6.4rem;
   /*bottom: -11.0rem;*/
   right: 2.4rem;
 }
-.specialist_voice .mv-second .hover-blk-wrap > .no-04 img {
+.specialist_voice .mv-second .hover-blk-wrap div > .no-04 + p + img {
   bottom: 6.4rem;
   /*bottom: -11.0rem;*/
   right: -2.6rem;
 }
-.specialist_voice .mv-second .hover-blk-wrap > .no-05 img {
+.specialist_voice .mv-second .hover-blk-wrap div > .no-05 + p + img {
   bottom: 6.4rem;
   /*bottom: -11.0rem;*/
   right: -4.6rem;
 }
-.specialist_voice .mv-second .hover-blk-wrap > .no-06 img {
+.specialist_voice .mv-second .hover-blk-wrap div > .no-06 + p + img {
   bottom: 6.4rem;
   /*bottom: -11.0rem;*/
   right: -1.6rem;
 }
-.specialist_voice .mv-second .hover-blk-wrap > .no-07 img {
+.specialist_voice .mv-second .hover-blk-wrap div > .no-07 + p + img {
   bottom: 6.4rem;
   /*bottom: -11.0rem;*/
   right: -2.2rem;
 }
-.specialist_voice .mv-second .hover-blk-wrap > a:hover p,
-.specialist_voice .mv-second .hover-blk-wrap > a:hover img {
+.specialist_voice .mv-second .hover-blk-wrap div > a:hover + p,
+.specialist_voice .mv-second .hover-blk-wrap div > a:hover + p + img {
   opacity: 1;
 }
 .specialist_voice .contents-area {
