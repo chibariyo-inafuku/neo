@@ -89,7 +89,7 @@
 
       <div class="main-visual">
         <!-- パターン01 -->
-        <img class="mv" src="img/home/mv.png" alt="">
+        <!-- <img class="mv" src="img/home/mv.png" alt=""> -->
 
         <!-- パターン02 -->
         <!-- <div id="ytPlayerWrap">
@@ -135,6 +135,73 @@
             left: 0;
           }
         </style> -->
+
+        <!-- パターン04 -->
+        <div class="video-container">
+          <div id="dispn" class="main-movie">
+            <div id="js-main-movie"></div>
+          </div>
+        </div>
+        <style type="text/css">
+          .video-container {
+            position: relative;
+            overflow-x: hidden;
+          }
+          .main-movie {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+            overflow: hidden;
+          }
+          .video-container iframe {
+            position: fixed;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+          }
+        </style>
+        <script>
+          var tag = document.createElement('script');
+          tag.src = "https://www.youtube.com/iframe_api";
+          var firstScriptTag = document.getElementsByTagName('script')[0];
+          firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+          var player;
+          function onYouTubeIframeAPIReady() {
+            player = new YT.Player('js-main-movie', {
+              videoId: 'id44iWyZIKE',
+              height: '360',
+              width: '640',
+              playerVars: {
+                controls: 0,
+                autoplay: 1,
+                disablekb:1,
+                enablejsapi: 1,
+                iv_load_policy: 3,
+                playsinline: 1,
+                rel: 0
+              },
+              events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+              }
+            });
+          }
+          function onPlayerReady(event) {
+            event.target.mute();
+            event.target.playVideo();
+          }
+          function onPlayerStateChange(event) {
+            var ytStatus = event.target.getPlayerState();
+            if (ytStatus == YT.PlayerState.ENDED) {
+              player.mute();
+              player.playVideo();
+            }
+          }
+        </script>
       </div>
       <div class="main-footer-bg">
         <main>
@@ -143,7 +210,7 @@
               <h2 class="h2-design-01 h2-orange-01 flex ai-c rogosan-b">
                 <span class="h-fl rogosan-b">N</span>EWS
                 <span class="h-in">
-                  <a href="news/index.html" class="rogosan-b">
+                  <a href="/news/" class="rogosan-b">
                     VIEW MORE
                   </a>
                 </span>
@@ -151,7 +218,7 @@
               <table>
                 <tr>
                   <th><time datetime="2018-05-14">2018.05.14</time></th>
-                  <td><a href="news/index.html"><span class="pcview">＞ </span>HPリニューアルいたしました。</a></td>
+                  <td><a href="/news/"><span class="pcview">＞ </span>HPリニューアルいたしました。</a></td>
                 </tr>
               </table>
               <div class="character-01">
@@ -166,8 +233,8 @@
                 </span>
               </h2>
               <div class="img-blk-01 flex">
-                <a href="company/mission/index.html"><img src="img/home/we-are-neo-01.png" alt=""></a>
-                <a href="company/feature/index.html"><img src="img/home/we-are-neo-02.png" alt=""></a>
+                <a href="/company/mission/"><img src="img/home/we-are-neo-01.png" alt=""></a>
+                <a href="/company/feature/"><img src="img/home/we-are-neo-02.png" alt=""></a>
                 <a class="no-hover"><img src="img/home/we-are-neo-03.png" alt=""></a>
               </div>
             </div>
@@ -181,21 +248,21 @@
               <div class="img-blk-02 flex">
                 <a><img src="img/home/neo-project-01.png" alt=""></a>
                 <div>
-                  <a href="services/renewable_energy/development/index.html"><img src="img/home/neo-project-02-01.png" alt=""></a>
-                  <a href="services/renewable_energy/maintenance/index.html"><img src="img/home/neo-project-02-02.png" alt=""></a>
+                  <a href="/services/renewable_energy/development/"><img src="img/home/neo-project-02-01.png" alt=""></a>
+                  <a href="/services/renewable_energy/maintenance/"><img src="img/home/neo-project-02-02.png" alt=""></a>
                 </div>
                 <div>
-                  <a href="services/renewable_energy/management/index.html"><img src="img/home/neo-project-03-01.png" alt=""></a>
-                  <a href="services/renewable_energy/ppa/index.html"><img src="img/home/neo-project-03-02.png" alt=""></a>
+                  <a href="/services/renewable_energy/management/"><img src="img/home/neo-project-03-01.png" alt=""></a>
+                  <a href="/services/renewable_energy/ppa/"><img src="img/home/neo-project-03-02.png" alt=""></a>
                 </div>
               </div>
               <div class="img-blk-01 flex">
-                <a href="services/construction/index.html"><img src="img/home/neo-project-04.png" alt=""></a>
-                <a href="services/network/index.html"><img src="img/home/neo-project-05.png" alt=""></a>
-                <a href="services/plant/index.html"><img src="img/home/neo-project-06.png" alt=""></a>
+                <a href="/services/construction/"><img src="img/home/neo-project-04.png" alt=""></a>
+                <a href="/services/network/"><img src="img/home/neo-project-05.png" alt=""></a>
+                <a href="/services/plant/"><img src="img/home/neo-project-06.png" alt=""></a>
               </div>
               <div class="img-blk-01 flex">
-                <a href="services/housing/index.html"><img src="img/home/neo-project-07.png" alt=""></a>
+                <a href="/services/housing/"><img src="img/home/neo-project-07.png" alt=""></a>
                 <img class="neo-project-07-add" src="img/home/neo-project-07-add.svg" alt="">
               </div>
               <div class="character-02">
@@ -211,7 +278,7 @@
               </h2>
               <div class="flex fw-w jc-sb">
                 <a class="ju0101 no-hover"><img src="img/home/join-us-01-01.png" alt=""></a>
-                <a class="ju0102" href="join_us/team_neo/specialist_voice/index.html"><img src="img/home/join-us-01-02.png" alt=""></a>
+                <a class="ju0102" href="/join_us/team_neo/specialist_voice/"><img src="img/home/join-us-01-02.png" alt=""></a>
                 <a class="ju0103 no-hover"><img src="img/home/join-us-01-03.png" alt=""></a>
                 <a class="ju0201 no-hover">
                   <img src="img/home/join-us-02-01.png" alt="">
@@ -219,12 +286,12 @@
                 </a>
                 <a class="ju0202 no-hover"><img src="img/home/join-us-02-02.png" alt=""></a>
                 <span class="flex">
-                  <a class="ju0301" href="history/story/index.html"><img src="img/home/join-us-03-01.png" alt=""></a>
-                  <a class="ju0302" href="history/story/index.html"><img src="img/home/join-us-03-02.png" alt=""></a>
+                  <a class="ju0301" href="/history/story/"><img src="img/home/join-us-03-01.png" alt=""></a>
+                  <a class="ju0302" href="/history/story/"><img src="img/home/join-us-03-02.png" alt=""></a>
                 </span>
                 <span class="flex">
-                  <a class="ju0401" href="history/information/index.html"><img src="img/home/join-us-04-01.png" alt=""></a>
-                  <a class="ju0402" href="history/information/index.html"><img src="img/home/join-us-04-02.png" alt=""></a>
+                  <a class="ju0401" href="/history/information/"><img src="img/home/join-us-04-01.png" alt=""></a>
+                  <a class="ju0402" href="/history/information/"><img src="img/home/join-us-04-02.png" alt=""></a>
                 </span>
               </div>
               <div class="character-03">
