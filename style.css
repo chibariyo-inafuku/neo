@@ -713,7 +713,44 @@ footer .inner .info p {
 .home main .inner .we-are-neo .img-blk-01 .no-hover:hover img {
   opacity: 1;
 }
+.home main .inner .we-are-neo .carousel,.home main .inner .neo-project .carousel {
+  width: 898px;
+  margin: 0 auto;
+  background-image: url('./img/carousel.svg'), url('./img/carousel.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  background-position: top left, top right;
+	position: relative;
+}
+.home main .inner .we-are-neo .carousel a img{
+  display: block;
+  width: 508px;
+  margin: 0 auto;
+}
+.home main .inner .neo-project .carousel a img {
+  display: block;
+  /*height: 176px;
+	width: 508px;*/
+	max-height: 172px;
+  margin: 0 auto;
+}
+.home main .inner .we-are-neo .carousel .slick-list,.home main .inner .neo-project .carousel .slick-list{
+	overflow: visible;
+}
+.home main .inner .we-are-neo .carousel .slick-slide,.home main .inner .neo-project .carousel .slick-slide{
+	opacity: 0.5;
+}
+.home main .inner .we-are-neo .carousel .slick-slide.slick-current,.home main .inner .neo-project .carousel .slick-slide.slick-current{
+	opacity: 1;
+}
+
 @media screen and (max-width: 1024px) {
+  /*.home main .inner .we-are-neo .carousel {
+    width: 89.8rem;
+  }
+  .home main .inner .we-are-neo .carousel a img {
+    width: 50.8rem;
+  }*/
 }
 
 /* neo-project */

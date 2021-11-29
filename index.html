@@ -235,10 +235,15 @@
                   NEOがどのように生まれ、何を目指し、何ができるのか。<br>我々の使命、強み、会社組織について説明します。
                 </span>
               </h2>
-              <div class="img-blk-01 flex">
+              <div class="img-blk-01 flex" style="display: none !important;">
                 <a href="/company/mission/"><img src="img/home/we-are-neo-01.png" alt=""></a>
                 <a href="/company/feature/"><img src="img/home/we-are-neo-02.png" alt=""></a>
                 <a class="no-hover"><img src="img/home/we-are-neo-03.png" alt=""></a>
+              </div>
+							<div class="carousel">
+                <a href="/company/mission/"><img src="img/we-are-neo-01.png" alt=""></a>
+                <a href="/company/feature/"><img src="img/we-are-neo-02.png" alt=""></a>
+                <a><img src="img/we-are-neo-03.png" alt=""></a>
               </div>
             </div>
             <div class="neo-project">
@@ -248,6 +253,18 @@
                   時代のニーズに応じて拡張を続けるNEOの事業領域。<br>我々が現在取り組む事業について説明します。
                 </span>
               </h2>
+							<div class="carousel">
+                <a><img src="img/neo-project-01.png" alt=""></a>
+                <a href="/services/renewable_energy/development/"><img src="img/neo-project-02.png" alt=""></a>
+                <a href="/services/renewable_energy/maintenance/"><img src="img/neo-project-03.png" alt=""></a>
+								<a href="/services/renewable_energy/management/"><img src="img/neo-project-04.png" alt=""></a>
+								<a href="/services/renewable_energy/ppa/"><img src="img/neo-project-05.png" alt=""></a>
+								<a href="/services/construction/"><img src="img/neo-project-06.png" alt=""></a>
+								<a href="/services/network/"><img src="img/neo-project-07.png" alt=""></a>
+								<a href="/services/plant/"><img src="img/neo-project-08.png" alt=""></a>
+								<a href="/services/housing/"><img src="img/neo-project-09.png" alt=""></a>
+              </div>
+							<!--div>
               <div class="img-blk-02 flex">
                 <a><img src="img/home/neo-project-01.png" alt=""></a>
                 <div>
@@ -268,6 +285,7 @@
                 <a href="/services/housing/"><img src="img/home/neo-project-07.png" alt=""></a>
                 <img class="neo-project-07-add" src="img/home/neo-project-07-add.svg" alt="">
               </div>
+							</div-->
               <div class="character-02 in-left">
                 <img src="img/home/character-02.png" alt="">
               </div>
@@ -301,7 +319,7 @@
                 <img src="img/home/character-03.png" alt="">
               </div>
             </div>
-          </div>
+					</div>
         </main>
 
         <footer>
@@ -386,28 +404,36 @@
 
       // カルーセル
       // we-are-neo
-      /*$(function() {
-        var slide = $('.main-visual');
+      $(function() {
+        var slide = $('.we-are-neo .carousel');
         slide.slick({
           infinite: true,
-          autoplay: false,
+          autoplay: true,
           dots: false,
           arrows: false,
           slidesToShow: 1,
-          centerMode: false,
-          // centerPadding: '40.0rem',
-          responsive: [
-            {
-              breakpoint: 1025,
-              settings: {
-                arrows: false,
-                slidesToShow: 1,
-                centerPadding: '0',
-              }
-            }
-          ]
+          centerMode: true,
+          centerPadding: '130px',
+					pauseOnHover: true,
+					pauseOnFocus: false,
         });
-      });*/
+      });
+      // neo-project
+      $(function() {
+        var slide = $('.neo-project .carousel');
+        slide.slick({
+          infinite: true,
+          autoplay: true,
+          dots: false,
+          arrows: false,
+          slidesToShow: 1,
+					centerMode: true,
+          centerPadding: '130px',
+          // centerPadding: '40.0rem',
+					pauseOnHover: true,
+					pauseOnFocus: false,
+        });
+      });
 
       // PC/SC切り替え
       if (window.matchMedia('(max-width: 1024px)').matches) {
