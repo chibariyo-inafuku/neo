@@ -1082,7 +1082,8 @@ footer .inner .info p {
 .specialist_voice .second-footer footer {
   background-image: none;
 }
-.specialist_voice .mv-second {
+.specialist_voice .mv-second,
+.specialist_voice .mv-second-in {
   position: relative;
 }
 .specialist_voice .mv-second .hover-blk-wrap {
