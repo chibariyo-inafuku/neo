@@ -1346,3 +1346,331 @@ footer .inner .info p {
   padding: 10px 10px 0;
   font-size: 14px;
 }
+
+/*======================================
+
+  10. specialist
+
+======================================*/
+
+.specialist-bg{
+    background-image: url(img/join_us/join_us-bg.png);
+ background-repeat:no-repeat;
+ background-attachment: scroll;
+    background-size: cover;
+    background-position: center top;
+    padding: 68px 0 0px;
+}
+.specialist-box{
+ display: flex;
+ justify-content: space-between;
+ height: 2633px;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.specialist-box-left{
+ width: 530px;
+}
+.specialist-box-right{
+ width: 334px;
+}
+.specialist-box-txt h3{
+ font-size: 32px;
+ font-family: "rogosan-b";
+ font-weight: normal;
+ text-shadow: 0px 0px 7px #000;
+}
+.specialist-box-txt h4{
+ font-size: 30px;
+ font-family: "rogosan-b";
+ font-weight: normal;
+ color: #da8000;
+ line-height: 1.5;
+ margin-bottom: 5px;
+ text-shadow: 0px 0px 7px #000;
+}
+.specialist-box-txt p{
+ margin-bottom: 15px;
+ font-size: 16px; 
+ text-shadow: 0px 0px 7px #000;
+}
+
+
+.special-efect{
+ transition: .4s;
+ animation: special-efecta 4.8s infinite ease-in 0s forwards;
+ position: relative;
+ z-index: 1;
+}
+
+.ef01{
+ animation: ef01 1.5s ease-in .5s forwards;
+ opacity: 0;
+}
+.ef03{
+ display: flex;
+    justify-content: center;
+ width: 424px;
+}
+@keyframes ef01 {
+ 0% {
+  opacity: 0;
+ }
+
+ 100% {
+  opacity: 1;
+ }
+}
+.special-efect02{
+ transition: .4s;
+ animation: special-efecta02 .5s ease-in 0s forwards;
+ position: relative;
+ z-index: 1;
+}
+.special-efect:nth-child(1){
+ animation-delay: 0.1s;
+}
+.special-efect:nth-child(2){
+ animation-delay: 5.2s;
+}
+.special-efect:nth-child(3){
+ animation-delay: 7.3s;
+}
+.special-efect:nth-child(4){
+ animation-delay: .8s;
+}
+.special-efect:nth-child(5){
+ animation-delay: 10.5s;
+}
+.special-efect:nth-child(6){
+ animation-delay: 4.1s;
+}
+.special-efect:nth-child(7){
+ animation-delay: .7s;
+}
+.special-efect:nth-child(8){
+ animation-delay: 1.8s;
+}
+.special-efect:nth-child(9){
+ animation-delay: 8.9s;
+}
+.special-efect:nth-child(10){
+ animation-delay: 1.0s;
+}
+.special-efect:nth-child(11){
+ animation-delay: .1s;
+}
+.special-efect:nth-child(12){
+ animation-delay: 12.2s;
+}
+.special-efect:nth-child(13){
+ animation-delay: .3s;
+}
+.special-efect:nth-child(14){
+ animation-delay: 2.4s;
+}
+.special-efect:nth-child(15){
+ animation-delay: .5s;
+}
+.special-efect:nth-child(16){
+ animation-delay: 3.6s;
+}
+.special-efect:nth-child(17){
+ animation-delay: .7s;
+}
+.special-efect:nth-child(18){
+ animation-delay: .8s;
+}
+.special-efect:nth-child(19){
+ animation-delay: .9s;
+}
+.special-efect:nth-child(20){
+ animation-delay: 5.1s;
+}
+.special-efect:nth-child(21){
+ animation-delay: .1s;
+}
+.special-efect:nth-child(22){
+ animation-delay: 2.2s;
+}
+.special-efect:nth-child(23){
+ animation-delay: .3s;
+}
+.special-efect:nth-child(24){
+ animation-delay: 3.4s;
+}
+.special-efect:nth-child(25){
+ animation-delay: 9.5s;
+}
+.special-efect:nth-child(26){
+ animation-delay: 3.6s;
+}
+.special-efect:nth-child(27){
+ animation-delay: 6.7s;
+}
+.special-efect:nth-child(28){
+ animation-delay: 1.2s;
+}
+
+
+@keyframes special-efecta {
+ 0% {
+  transform: scale(1);
+  z-index: 1;
+ }
+ 90% {
+  transform: scale(1);
+  z-index: 1;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0);
+ }
+ 95% {
+  opacity: 1;
+  transform: scale(1.4);
+  z-index: 2;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+ }
+ 100% {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0)
+ }
+}
+@keyframes special-efecta02 {
+ 0% {
+  transform: scale(1);
+  z-index: 1;
+ }
+ 50% {
+  transform: scale(2);
+  z-index: 1;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+ }
+ 100% {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0)
+ }
+}
+.slide-wrap{
+ display: flex;
+ justify-content: center;
+}
+.slide01,.slide01{
+ width: 50%;
+}
+.slide-wrap li{
+ list-style: none;
+ margin: 0;
+ padding: 15px;
+}
+.slide_vertical{
+ padding: 0 !important;
+}
+
+.slide_vertical li.nth-child01 .special-efect{
+ animation-delay: 0.1s;
+}
+.slide_vertical li.nth-child02 .special-efect{
+ animation-delay: 5.2s;
+}
+.slide_vertical li.nth-child03 .special-efect{
+ animation-delay: 7.3s;
+}
+.slide_vertical li.nth-child04 .special-efect{
+ animation-delay: .8s;
+}
+.slide_vertical li.nth-child05 .special-efect{
+ animation-delay: 10.5s;
+}
+.slide_vertical li.nth-child06 .special-efect{
+ animation-delay: 4.1s;
+}
+.slide_vertical li.nth-child07 .special-efect{
+ animation-delay: .7s;
+}
+.slide_vertical li.nth-child08 .special-efect{
+ animation-delay: 1.8s;
+}
+.slide_vertical li.nth-child09 .special-efect{
+ animation-delay: 8.9s;
+}
+.slide_vertical li.nth-child10 .special-efect{
+ animation-delay: 1.0s;
+}
+.slide_vertical li.nth-child11 .special-efect{
+ animation-delay: .1s;
+}
+.slide_vertical li.nth-child12 .special-efect{
+ animation-delay: 12.2s;
+}
+.slide_vertical li.nth-child13 .special-efect{
+ animation-delay: .3s;
+}
+.slide_vertical li.nth-child14 .special-efect{
+ animation-delay: 3.4s;
+}
+.slide_vertical li.nth-child15 .special-efect{
+ animation-delay: 0.2s;
+}
+.slide_vertical li.nth-child16 .special-efect{
+ animation-delay: 5.0s;
+}
+.slide_vertical li.nth-child17 .special-efect{
+ animation-delay: 7.6s;
+}
+.slide_vertical li.nth-child18 .special-efect{
+ animation-delay: .8s;
+}
+.slide_vertical li.nth-child19 .special-efect{
+ animation-delay: 9.5s;
+}
+.slide_vertical li.nth-child20 .special-efect{
+ animation-delay: 4.2s;
+}
+.slide_vertical li.nth-child21 .special-efect{
+ animation-delay: .7s;
+}
+.slide_vertical li.nth-child22 .special-efect{
+ animation-delay: 1.3s;
+}
+.slide_vertical li.nth-child23 .special-efect{
+ animation-delay: 6.9s;
+}
+.slide_vertical li.nth-child24 .special-efect{
+ animation-delay: 1.2s;
+}
+.slide_vertical li.nth-child25 .special-efect{
+ animation-delay: .31s;
+}
+.slide_vertical li.nth-child26 .special-efect{
+ animation-delay: 12.4s;
+}
+.slide_vertical li.nth-child27 .special-efect{
+ animation-delay: .8s;
+}
+.slide_vertical li.nth-child28 .special-efect{
+ animation-delay: 2.0s;
+}
+
+.infiniteslide_wrap{
+ overflow: visible !important;
+}
+.inner-second.specia{
+ max-width: 1075px;
+}
+#bannar01 {
+    position: fixed;
+    z-index: 2;
+    display: block !important;
+    position: fixed !important;
+    right: 0;
+ left: 0;
+ margin: auto;
+ top: 230px;
+    bottom: 50px;
+    width: 800px;
+    transition: all .2s;
+ z-index: 0;
+}

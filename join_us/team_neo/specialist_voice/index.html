@@ -7,7 +7,8 @@
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/9a30c06415.js" crossorigin="anonymous"></script>
-		<script src="../../../js/common.js"></script>
+		<script src="../../../js/jquery.inview.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link rel="stylesheet" href="../../../css/normalize.css">
     <link rel="stylesheet" href="../../../css/slick.css">
     <link rel="stylesheet" href="../../../css/slick-theme.css">
@@ -69,7 +70,8 @@
     			        <li> <a class="acc-outer">JOIN US <i class="fas fa-angle-down spview-i"></i><i class="fas fa-angle-up spview-i fs0"></i></a>
     			          <ul class="acc-inner">
     			            <!--li><a href="">TEAM NEO</a></li-->
-    			            <li><a href="/join_us/team_neo/specialist_voice/">SPECIALIST</a></li>
+    			            <li><a href="/join_us/team_neo/specialist/">SPECIALIST</a></li>
+                <li><a href="/join_us/team_neo/specialist_voice/" class="gyou2">SPECIALIST<br>VOICE</a></li>
     			            <!--li><a href="">RECRUIT</a></li-->
     			          </ul>
     			        </li>
@@ -158,37 +160,37 @@
 					<div class="contents-area">
 						<div class="inner-second">
               <div class="list-blk">
-                <div class="flex fw-w" id="no-01">
+                <div class="flex fw-w in-left" id="no-01">
                   <a class="people" href="yamamichi/"><img src="../../../img/join_us/list-01-01.png" alt=""></a>
                   <a class="mark" href="yamamichi/"><img src="../../../img/join_us/list-01-02.png" alt=""></a>
                   <a class="profile" href="yamamichi/"><img src="../../../img/join_us/list-01-03.png" alt=""></a>
                 </div>
-                <div class="flex fw-w" id="no-02">
+                <div class="flex fw-w in-right" id="no-02">
                   <a class="profile" href="tanaka/"><img src="../../../img/join_us/list-02-01.png" alt=""></a>
                   <a class="people" href="tanaka/"><img src="../../../img/join_us/list-02-02.png" alt=""></a>
                   <a class="mark" href="tanaka/"><img src="../../../img/join_us/list-02-03.png" alt=""></a>
                 </div>
-                <div class="flex fw-w" id="no-03">
+                <div class="flex fw-w in-left" id="no-03">
                   <a class="people" href="oosika/"><img src="../../../img/join_us/list-03-01.png" alt=""></a>
                   <a class="mark" href="oosika/"><img src="../../../img/join_us/list-03-02.png" alt=""></a>
                   <a class="profile" href="oosika/"><img src="../../../img/join_us/list-03-03.png" alt=""></a>
                 </div>
-                <div class="flex fw-w" id="no-04">
+                <div class="flex fw-w in-right" id="no-04">
                   <a class="profile" href="fujiwara/"><img src="../../../img/join_us/list-04-01.png" alt=""></a>
                   <a class="people" href="fujiwara/"><img src="../../../img/join_us/list-04-02.png" alt=""></a>
                   <a class="mark" href="fujiwara/"><img src="../../../img/join_us/list-04-03.png" alt=""></a>
                 </div>
-                <div class="flex fw-w" id="no-05">
+                <div class="flex fw-w in-left" id="no-05">
                   <a class="people" href="kuniki/"><img src="../../../img/join_us/list-05-01.png" alt=""></a>
                   <a class="mark" href="kuniki/"><img src="../../../img/join_us/list-05-02.png" alt=""></a>
                   <a class="profile" href="kuniki/"><img src="../../../img/join_us/list-05-03.png" alt=""></a>
                 </div>
-                <div class="flex fw-w" id="no-06">
+                <div class="flex fw-w in-right" id="no-06">
                   <a class="profile" href="takakura/"><img src="../../../img/join_us/list-06-01.png" alt=""></a>
                   <a class="people" href="takakura/"><img src="../../../img/join_us/list-06-02.png" alt=""></a>
                   <a class="mark" href="takakura/"><img src="../../../img/join_us/list-06-03.png" alt=""></a>
                 </div>
-                <div class="flex fw-w" id="no-07">
+                <div class="flex fw-w in-left" id="no-07">
                   <a class="people" href="shirahashi/"><img src="../../../img/join_us/list-07-01.png" alt=""></a>
                   <a class="mark" href="shirahashi/"><img src="../../../img/join_us/list-07-02.png" alt=""></a>
                   <a class="profile" href="shirahashi/"><img src="../../../img/join_us/list-07-03.png" alt=""></a>
@@ -232,7 +234,8 @@
               <h2>JOIN US</h2>
               <ul>
                 <!--li><a href="#">TEAM NEO</a></li-->
-                <li><a href="/join_us/team_neo/specialist_voice/">SPECIALIST</a></li>
+                <li><a href="/join_us/team_neo/specialist/">SPECIALIST</a></li>
+                <li><a href="/join_us/team_neo/specialist_voice/">SPECIALIST VOICE</a></li>
                 <!--li><a href="#">RECRUIT</a></li-->
               </ul>
             </div>
@@ -265,6 +268,7 @@
   		</div>
 			
     </div>
+		<script src="../../../js/common.js"></script>
     <script src="../../js/slick.min.js"></script>
     <script>
       // スムーススクロール
